@@ -1,0 +1,164 @@
+* {
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #141418;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+body .input-group {
+  z-index: 10;
+  width: 100%;
+  height: 10vh;
+  background: #303030;
+  top: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .input-group .input-subgrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 6vh;
+  margin: 1vh 0;
+}
+
+body .input-group .input-subgrp header {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  cursor: default;
+  margin-right: 20px;
+}
+
+body .input-group .input-subgrp form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .input-group .input-subgrp form input {
+  height: 6vh;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  font-size: 16px;
+  padding: 20px;
+}
+
+body .input-group .input-subgrp form input:focus {
+  outline: 2px solid #0ee69e;
+}
+
+body .card-container {
+  width: 75%;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  background: visible;
+}
+
+body .card-container .card {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 10px;
+  background: #303030;
+  -webkit-box-shadow: 13px 8px 17px -8px rgba(0, 0, 0, 0.45);
+          box-shadow: 13px 8px 17px -8px rgba(0, 0, 0, 0.45);
+}
+
+body .card-container .card .img-card {
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 85%;
+}
+
+body .card-container .card .img-card img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+body .card-container .card .img-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+body .card-container .card .card-body {
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+body .card-container .card .card-body .rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #0ee69e;
+  padding: 4px 4px;
+  border-radius: 4px;
+}
+
+body .card-container .card .card-body p {
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
