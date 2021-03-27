@@ -3,7 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -33,6 +33,12 @@ body .input-group {
           align-items: center;
 }
 
+@media only screen and (max-width: 426px) {
+  body .input-group {
+    height: 18vh;
+  }
+}
+
 body .input-group .input-subgrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,12 +54,30 @@ body .input-group .input-subgrp {
   margin: 1vh 0;
 }
 
+@media only screen and (max-width: 426px) {
+  body .input-group .input-subgrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
 body .input-group .input-subgrp header {
   color: white;
   font-size: 32px;
   text-align: center;
   cursor: default;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 426px) {
+  body .input-group .input-subgrp header {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
 }
 
 body .input-group .input-subgrp form {

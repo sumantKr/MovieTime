@@ -2,7 +2,7 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 body {
     background: #141418;
@@ -22,6 +22,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width:426px){
+            height: 18vh;
+        }
         .input-subgrp {
             display: flex;
             justify-content: space-between;
@@ -29,12 +32,20 @@ body {
             width: 60%;
             height: 6vh;
             margin: 1vh 0;
+            @media only screen and (max-width:426px){
+                flex-direction: column;
+                transform: translateY(-30px);
+            }
             header {
                 color: white;
                 font-size: 32px;
                 text-align: center;
                 cursor: default;
                 margin-right: 20px;
+                @media only screen and (max-width:426px){
+                    margin-bottom:10px;
+                    margin-right: 0;
+                }
             }
             form {
                 flex: 1;
